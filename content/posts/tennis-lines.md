@@ -16,7 +16,7 @@ Ahh, the joy of tennis on clay courts. Nothing's more fun than power sliding thr
 
 Let's assume there are two brushes on the court, so that we are only responsible for cleaning one side. Typically, the brush is stored in one of the back edges of the court. We can model our half of the court as a graph with 15 vertices, vertex 0 representing the initial position of the brush:
 
-![Tennis Court Dimensions](tennis-lines-measurements.svg)
+![Tennis Court Dimensions](tennis-lines-dimensions.svg)
 
 Some of the vertices are connected by lines. The idea is to find the shortest tour starting in 0 that visits every line. Vertices 2 and 11 might seem unnecessary. I've included them out of curiosity: some people like to sweep the side lines "in parallel" by doing something like 1-2, 4-5-6, 2-3. Note that the solution might contain cycles as well as paths that do not correspond to lines. Also note that for lines of length 0, this problem is equivalent to the [Travelling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem), which is [NP-hard](https://en.wikipedia.org/wiki/NP-hardness).
 
