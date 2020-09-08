@@ -21,8 +21,8 @@ Let's assume there are two brushes on the court, so that we are only responsible
 Some of the vertices are connected by lines. The idea is to find the shortest tour starting in 0 that visits every line. Vertices 2 and 11 might seem unnecessary. I've included them out of curiosity: some people like to sweep the side lines "in parallel" by doing something like 1-2, 4-5-6, 2-3. Note that the solution might contain cycles as well as paths that do not correspond to lines. Also note that for lines of length 0, this problem is equivalent to the [Travelling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem), which is [NP-hard](https://en.wikipedia.org/wiki/NP-hardness).
 
 One way to find a solution is to list off every possible sequence of vertices and find the shortest one that brushes every line. Note that the maximum length of the solution sequence is twice the number of lines (plus one) because there is no point in having paths longer than one in between two lines (and we have to go back to 0). Assuming we can check every candidate solution in linear time, the time complexity of this algorithm is
-$$ \mathcal{O}\left( \sum_{n=1}^{2l-1} v^n n \right), $$
-*l* being the number of lines and *v* the number of vertices.
+$$ \mathcal{O}\left( \sum\_{n=1}^{2l-1} v^n n \right), $$
+$l$ being the number of lines and *v* the number of vertices.
 
 Another way is to enumerate all the sequences of lines, then compute every sequence of vertices corresponding to that sequence of lines (there might be multiple) and take the shortest overall. The time complexity of this solution is $$ \mathcal{O}\left( l!2^ll \right). $$
 
