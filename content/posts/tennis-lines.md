@@ -1,14 +1,14 @@
 +++
 title = "Brushing clay court lines optimally"
-date = 2020-09-06
+date = "2020-09-06"
 author = "ebuehrle"
-#authorTwitter = "" #do not include @
-#cover = ""
+authorTwitter = "" #do not include @
+cover = ""
 tags = ["tennis", "routing", "algorithms"]
 keywords = ["clay", "lines", "brush"]
 description = "Clay is one of the nicest surfaces to play tennis on, but what's the fastest way to get that line brushing done afterwards?"
 showFullContent = false
-draft = true
+draft = false
 katex = true
 +++
 
